@@ -22,3 +22,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/myh0728/EPPS
+BugReports: https://github.com/myh0728/EPPS/issues
