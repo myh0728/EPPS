@@ -270,6 +270,17 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// chol_rcpp
+arma::mat chol_rcpp(arma::mat M_S);
+RcppExport SEXP _EPPS_chol_rcpp(SEXP M_SSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::mat >::type M_S(M_SSEXP);
+    rcpp_result_gen = Rcpp::wrap(chol_rcpp(M_S));
+    return rcpp_result_gen;
+END_RCPP
+}
 // GroupSum_rcpp
 arma::mat GroupSum_rcpp(arma::mat MM, arma::uvec id);
 RcppExport SEXP _EPPS_GroupSum_rcpp(SEXP MMSEXP, SEXP idSEXP) {
@@ -387,6 +398,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"_EPPS_solve_rcpp", (DL_FUNC) &_EPPS_solve_rcpp, 2},
     {"_EPPS_inv_sympd_rcpp", (DL_FUNC) &_EPPS_inv_sympd_rcpp, 1},
     {"_EPPS_eigen_rcpp", (DL_FUNC) &_EPPS_eigen_rcpp, 1},
+    {"_EPPS_chol_rcpp", (DL_FUNC) &_EPPS_chol_rcpp, 1},
     {"_EPPS_GroupSum_rcpp", (DL_FUNC) &_EPPS_GroupSum_rcpp, 2},
     {"_EPPS_countAinB_rcpp", (DL_FUNC) &_EPPS_countAinB_rcpp, 2},
     {"_EPPS_countAinB_W_rcpp", (DL_FUNC) &_EPPS_countAinB_W_rcpp, 3},

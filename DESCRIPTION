@@ -1,7 +1,7 @@
 Package: EPPS
 Type: Package
 Title: Efficient Prior Probability Shift Methods
-Version: 2.0
+Version: 2.1
 Date: 2023-06-03
 Author: Ming-Yueh Huang
 Maintainer: Ming-Yueh Huang
