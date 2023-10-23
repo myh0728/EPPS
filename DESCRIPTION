@@ -1,0 +1,24 @@
+Package: EPPS
+Type: Package
+Title: Efficient Prior Probability Shift Methods
+Version: 2.0
+Date: 2023-06-03
+Author: Ming-Yueh Huang
+Maintainer: Ming-Yueh Huang
+   <myh0728@stat.sinica.edu.tw>
+Description: Efficient estimation under the prior probability shift,
+    testing for the prior probability shift assumption,
+    extensions for the high-dimensional covariate data
+License: None
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Rcpp (>= 1.0.9),
+    RcppArmadillo
+LinkingTo: Rcpp, RcppArmadillo
+SystemRequirements: C++11
+NeedsCompilation: yes
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
